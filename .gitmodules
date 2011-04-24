@@ -25,3 +25,9 @@
 [submodule "bundle/utl.vim"]
 	path = bundle/utl.vim
 	url = https://github.com/vim-scripts/utl.vim.git
+[submodule "bundle/vim-trailing-whitespace"]
+	path = bundle/vim-trailing-whitespace
+	url = http://github.com/bronson/vim-trailing-whitespace
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
