@@ -6,10 +6,11 @@ set nocompatible
 colorscheme wombat
 "colorscheme jellyx
 "colorscheme mustang
+"stupid fix for coffee-script plugin
+filetype off
+"stupid fix end
 
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 syntax on
 
 set encoding=utf-8
