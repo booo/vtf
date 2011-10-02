@@ -46,3 +46,18 @@ autocmd FileType javascript map <F5> :w<CR>:!node "%"<CR>
 autocmd FileType coffee map <F5> :w<CR>:!coffee "%"<CR>
 autocmd FileType ruby map <F5> :w<CR>:!ruby "%"<CR>
 autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
+
+" restore cursor position
+set viminfo='10,\"100,:20,%,n~/.viminfo
+
+function! ResCur()
+    if line("'\"") <= line("$")
+        normal! g`"
+        return 1
+    endif
+endfunction
+
+augroup resCur
+    autocmd!
+    autocmd BufWinEnter * call ResCur()
+augroup END
