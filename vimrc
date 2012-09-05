@@ -21,6 +21,9 @@ set shiftwidth=4
 "set softtabstop=4
 set expandtab
 
+set linebreak
+set textwidth=80
+
 nnoremap <tab> %
 vnoremap <tab> %
 
@@ -46,6 +49,7 @@ autocmd FileType javascript map <F5> :w<CR>:!node "%"<CR>
 autocmd FileType coffee map <F5> :w<CR>:!coffee "%"<CR>
 autocmd FileType ruby map <F5> :w<CR>:!ruby "%"<CR>
 autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
+autocmd FileType r map <F5> :w<CR>:!Rscript "%"<CR>
 
 " restore cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
