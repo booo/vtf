@@ -61,3 +61,6 @@
 [submodule "bundle/vimtodo"]
 	path = bundle/vimtodo
 	url = https://github.com/mivok/vimtodo.git
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
