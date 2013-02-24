@@ -3,7 +3,8 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible
-colorscheme wombat
+colorscheme desert
+"colorscheme wombat
 "colorscheme jellyx
 "colorscheme mustang
 "stupid fix for coffee-script plugin
@@ -50,6 +51,7 @@ autocmd FileType coffee map <F5> :w<CR>:!coffee "%"<CR>
 autocmd FileType ruby map <F5> :w<CR>:!ruby "%"<CR>
 autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
 autocmd FileType r map <F5> :w<CR>:!Rscript "%"<CR>
+autocmd FileType php map <F5> :w<CR>:!php "%"<CR>
 
 " restore cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
