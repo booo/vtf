@@ -3,10 +3,9 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible
-colorscheme desert
-"colorscheme wombat
-"colorscheme jellyx
-"colorscheme mustang
+
+colorscheme tango2
+
 "stupid fix for coffee-script plugin
 filetype off
 "stupid fix end
