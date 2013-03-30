@@ -41,7 +41,9 @@ set wildmode=list:full
 set undofile
 set undodir=/tmp/
 if has("autocmd")
-	autocmd bufwritepost .vimrc source $MYVIMRC
+    autocmd bufwritepost .vimrc source $MYVIMRC
+    autocmd bufwritepost vimrc source $MYVIMRC
+    autocmd bufwritepost index.Rmd !./make.r
 endif
 
 " Start node on F5
