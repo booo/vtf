@@ -53,6 +53,7 @@ autocmd FileType ruby map <F5> :w<CR>:!ruby "%"<CR>
 autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
 autocmd FileType r map <F5> :w<CR>:!Rscript "%"<CR>
 autocmd FileType php map <F5> :w<CR>:!php "%"<CR>
+autocmd FileType html map <F5> :w<CR>:!chromium-browser "%"<CR>
 
 " restore cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
