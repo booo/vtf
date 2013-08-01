@@ -54,6 +54,8 @@ autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
 autocmd FileType r map <F5> :w<CR>:!Rscript "%"<CR>
 autocmd FileType php map <F5> :w<CR>:!php "%"<CR>
 autocmd FileType html map <F5> :w<CR>:!chromium-browser "%"<CR>
+autocmd FileType haskell map <F5> :w<CR>:!runghc "%"<CR>
+autocmd FileType puppet map <F5> :w<CR>:!vagrant provision<CR>
 
 " restore cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -72,3 +74,9 @@ augroup END
 
 :nmap <C-n> :bnext<CR>
 :nmap <C-p> :bprev<CR>
+
+:nmap <F6> ysiw
+:nmap <F4> :ZoomWin<CR>
+
+:nmap qq :q<CR>
+:nmap ww :w<CR>
