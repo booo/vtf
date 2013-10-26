@@ -78,5 +78,4 @@ augroup END
 :nmap <F6> ysiw
 :nmap <F4> :ZoomWin<CR>
 
-:nmap qq :q<CR>
-:nmap ww :w<CR>
+let g:syntastic_java_javac_config_file_enabled = 1
