@@ -72,6 +72,8 @@ augroup resCur
     autocmd BufWinEnter * call ResCur()
 augroup END
 
+nnoremap <F2> :set nonumber!<CR>
+
 :nmap <C-n> :bnext<CR>
 :nmap <C-p> :bprev<CR>
 
