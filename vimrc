@@ -56,6 +56,8 @@ autocmd FileType php map <F5> :w<CR>:!php "%"<CR>
 autocmd FileType html map <F5> :w<CR>:!chromium-browser "%"<CR>
 autocmd FileType haskell map <F5> :w<CR>:!runghc "%"<CR>
 autocmd FileType puppet map <F5> :w<CR>:!vagrant provision<CR>
+autocmd FileType lua map <F5> :w<CR>:!lua "%"<CR>
+
 
 " restore cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
