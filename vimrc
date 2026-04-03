@@ -4,7 +4,7 @@ call pathogen#runtime_append_all_bundles()
 
 set nocompatible
 
-colorscheme tango2
+"colorscheme tango2
 
 "stupid fix for coffee-script plugin
 filetype off
@@ -57,6 +57,8 @@ autocmd FileType html map <F5> :w<CR>:!chromium-browser "%"<CR>
 autocmd FileType haskell map <F5> :w<CR>:!runghc "%"<CR>
 autocmd FileType puppet map <F5> :w<CR>:!vagrant provision<CR>
 autocmd FileType lua map <F5> :w<CR>:!lua "%"<CR>
+autocmd FileType sh map <F5> :w<CR>:!sh "%"<CR>
+autocmd FileType sql map <F5> :w<CR>:!psql searchwing searchwing -f "%"<CR>
 
 
 " restore cursor position
@@ -82,5 +84,10 @@ nnoremap <F2> :set nonumber!<CR>
 :nmap <F6> ysiw
 :nmap <F4> :ZoomWin<CR>
 
+vnoremap < <gv " better indentation
+vnoremap > >gv " better indentation
+
 let g:syntastic_java_javac_config_file_enabled = 1
-let g:syntastic_python_checkers=['pep8']
+let g:syntastic_python_checkers = ['pep8']
+let g:syntastic_lua_checkers = ['luacheck']
+let g:syntastic_check_on_open = 1

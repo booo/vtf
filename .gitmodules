@@ -70,3 +70,12 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode
+[submodule "bundle/vim-speeddating"]
+	path = bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "bundle/syntastic-local-eslint.vim"]
+	path = bundle/syntastic-local-eslint.vim
+	url = https://github.com/mtscout6/syntastic-local-eslint.vim
